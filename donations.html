@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('file:///C:/Users/daire/Downloads/Og%20don.png');
+            background-size: cover;
+            background-position: center-right;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+
+        /* ... existing styles ... */
+
+        #pixelated-text {
+            margin-top: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        #white-square-container {
+            margin-top: 100px; /* Added margin-top for scroll */
+            position: absolute;
+            bottom: -500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        .white-box {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 5px;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: outline 0.3s ease;
+            cursor: pointer;
+        }
+
+        .white-box:hover {
+            outline: 2px solid lightgrey;
+        }
+
+        #faint-text {
+            font-size: 12px;
+            opacity: 0.7;
+            color: black;
+        }
+    </style>
+    <title>Donations</title>
+</head>
+<body>
+
+    <div id="pixelated-text">
+        ❤Welcome to the Donations page❤
+    </div>
+
+    <div>
+        <a href="file:///C:/Users/daire/Desktop/Sponsership%20Skyscrapers.html">👈Back</a>
+    </div>
+
+    <div id="white-square-container">
+        <div class="white-box" onclick="changeBackground('1c')">
+            <span id="faint-text">1c</span>
+        </div>
+        <div class="white-box" onclick="changeBackground('2c')">
+            <span id="faint-text">2c</span>
+        </div>
+        <div class="white-box" onclick="changeBackground('5c')">
+            <span id="faint-text">5c</span>
+        </div>
+        <div class="white-box" onclick="changeBackground('10c')">
+            <span id="faint-text">10c</span>
+        </div>
+        <div class="white-box" onclick="changeBackground('None')">
+            <span id="faint-text">None</span>
+        </div>
+        <div class="white-box" onclick="changeBackground('20c')">
+            <span id="faint-text">20c</span>
+        </div>
+        <div class="white-box" onclick="changeBackground('50c')">
+            <span id="faint-text">50c</span>
+        </div>
+        <div class="white-box" onclick="changeBackground('1€')">
+            <span id="faint-text">1€</span>
+        </div>
+        <div class="white-box" onclick="changeBackground('€1>')">
+            <span id="faint-text">€1> </span>
+        </div>
+    </div>
+
+    <script>
+        function changeBackground(position) {
+            // Change background image based on position
+            switch (position) {
+                case '1c':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/1c.png')";
+                    break;
+                case '2c':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/2c.png')";
+                    break;
+                case '5c':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/5c.png')";
+                    break;
+                case '10c':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/10c.png')";
+                    break;
+                case 'None':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/Og%20don.png')";
+                    break;
+                case '20c':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/20c.png')";
+                    break;
+                case '50c':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/50c.png')";
+                    break;
+                case '1€':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/1more.png')";
+                    break;
+                case '€1>':
+                    document.body.style.backgroundImage = "url('file:///C:/Users/daire/Downloads/1€%20more.png')";
+                    break;
+                default:
+                    break;
+            }
+        }
+	
+    </script>
+
+</body>
+</html>
